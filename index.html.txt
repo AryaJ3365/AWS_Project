@@ -1,0 +1,47 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Project 2 - Registration</title>
+	<link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"/>
+</head>
+
+<section class="hero">
+	<div class="hero-body">
+	<div class="container has-text-centered">
+
+	<h1 class="title">Registration</h1>
+	<form action="{{ url_for("php_database")}}" method="post">
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="uname" placeholder="username">
+	<br><br>
+		<label for="password">Password:</label>
+		<input type="text" id="password" name="pass" placeholder="password">
+	<br><br><br><br>
+
+ 	<h2 class="title">Enter Details</h2>
+	<form action="{{ url_for("php_database")}}" method="post">
+		<label for="firstname">First Name:</label>
+		<input type="text" id="firstname" name="fname" placeholder="firstname">
+	<br><br>
+		<label for="lastname">Last Name: </label>
+		<input type="text" id="lastname" name="lname" placeholder="lastname">
+ 	<br><br>
+		<label for="email">Email Address:</label>
+		<input type="text" id="email" name="email" placeholder="email">
+ 	<br><br>
+		<button type="submit">Login</button>
+	<br><br>
+
+	</div>
+	</div>
+</section>
+	<footer>
+	
+	Instructions: Enter Username and Password to grant access to user information. Then enter or re-enter 
+	user information so we can verify the information in the database. You MUST enter a username and password to access the 
+	sensitive user information.
+
+	</footer>
+</html>
